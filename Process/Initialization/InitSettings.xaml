@@ -173,7 +173,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Throw DisplayName="Throw Configuration File Not Found" Exception="[New Exception(&quot;Configuration file not found: &quot;+in_ConfigFilePath)]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                <Throw DisplayName="Throw Configuration File Not Found" Exception="[New BusinessRuleException(&quot;Configuration file not found: &quot;+in_ConfigFilePath)]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Throw_2" />
               </Sequence>
             </TryCatch.Finally>
           </TryCatch>
