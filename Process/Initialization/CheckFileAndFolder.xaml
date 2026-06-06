@@ -42,6 +42,7 @@
       <x:String>System.Xml.Serialization</x:String>
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -100,22 +101,25 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CheckFileAndFolder" sap:VirtualizedContainerService.HintSize="1254,2392" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CheckFileAndFolder" sap:VirtualizedContainerService.HintSize="1254,2795" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message (Start Check File and Folder)" sap:VirtualizedContainerService.HintSize="522,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Start Check File and Folder&quot;]" />
-    <Sequence DisplayName="Check Input File" sap:VirtualizedContainerService.HintSize="522,1231" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Check Input File" sap:VirtualizedContainerService.HintSize="522,1634" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[File.Exists(in_Config(&quot;InputFilePath&quot;).ToString) = False]" DisplayName="If Input File Not Exists" sap:VirtualizedContainerService.HintSize="488,1139" sap2010:WorkflowViewState.IdRef="If_1">
+      <If Condition="[File.Exists(in_Config(&quot;InputFilePath&quot;).ToString) = False]" DisplayName="If Input File Not Exists" sap:VirtualizedContainerService.HintSize="488,1542" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Then>
           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,174" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
@@ -127,14 +131,14 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,835" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,1238" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:LogMessage DisplayName="Log Message (Check Input File)" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Found Input File: &quot;+ in_Config(&quot;InputFilePath&quot;).ToString]" />
-            <TryCatch DisplayName="Try Catch Load Input Data" sap:VirtualizedContainerService.HintSize="452,600" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Catch Load Input Data" sap:VirtualizedContainerService.HintSize="452,609" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <TryCatch.Try>
                 <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <sap:WorkflowViewStateService.ViewState>
@@ -172,6 +176,33 @@
                 </Sequence>
               </TryCatch.Finally>
             </TryCatch>
+            <If Condition="[out_dtInput.RowCount = 0]" DisplayName="If Input Data is Empty" sap:VirtualizedContainerService.HintSize="452,394" sap2010:WorkflowViewState.IdRef="If_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw Exception="[New BusinessRuleException(&quot;No input data found for processing&quot;)]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Throw_4" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
           </Sequence>
         </If.Else>
       </If>
