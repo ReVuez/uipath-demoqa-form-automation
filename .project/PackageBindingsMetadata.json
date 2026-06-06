@@ -1022,7 +1022,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
+            "Value": "2.2",
             "ValueSource": "Constant"
           },
           "Connector": {
@@ -1054,7 +1054,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
+            "Value": "2.2",
             "ValueSource": "Constant"
           },
           "Connector": {
@@ -1086,7 +1086,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
+            "Value": "2.2",
             "ValueSource": "Constant"
           },
           "Connector": {
@@ -1118,7 +1118,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
+            "Value": "2.2",
             "ValueSource": "Constant"
           },
           "Connector": {
@@ -1150,7 +1150,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
+            "Value": "2.2",
             "ValueSource": "Constant"
           },
           "Connector": {
