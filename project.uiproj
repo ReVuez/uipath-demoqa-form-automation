@@ -1,0 +1,6 @@
+{
+  "Name": "DemoQa_Form_Automation",
+  "ProjectType": "Process",
+  "Description": "Automation for DemoQA Practice Form.",
+  "MainFile": "Main.xaml"
+}
