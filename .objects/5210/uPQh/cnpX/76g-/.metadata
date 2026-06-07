@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "Student Registration Form",
+  "Name": "Gender",
   "Type": "Element",
-  "TaxonomyType": "Element",
-  "Id": "dp9IA_VJM0a4ArGLEpiFtg",
-  "Reference": "fvi7cEvBUU6-Uj6PryTMgw/dp9IA_VJM0a4ArGLEpiFtg",
+  "TaxonomyType": "RadioButton",
+  "Id": "76g-ZAjCUUuYX1PniWtutQ",
+  "Reference": "fvi7cEvBUU6-Uj6PryTMgw/76g-ZAjCUUuYX1PniWtutQ",
   "ParentRef": "fvi7cEvBUU6-Uj6PryTMgw/cnpX9v7Y9kqNGQhfqSOZ4g",
-  "Created": "2026-06-07T09:36:02.2878333Z",
-  "Updated": "2026-06-07T11:18:19.1871194Z",
+  "Created": "2026-06-07T10:15:16.8202753Z",
+  "Updated": "2026-06-07T10:57:59.5440558Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=24.10.19.0, Culture=neutral, PublicKeyToken=null",
     "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"

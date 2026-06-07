@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "Student Registration Form",
+  "Name": "Mobile Number",
   "Type": "Element",
-  "TaxonomyType": "Element",
-  "Id": "dp9IA_VJM0a4ArGLEpiFtg",
-  "Reference": "fvi7cEvBUU6-Uj6PryTMgw/dp9IA_VJM0a4ArGLEpiFtg",
+  "TaxonomyType": "Input",
+  "Id": "N9oGW3QXw0KmoY15sNrFrA",
+  "Reference": "fvi7cEvBUU6-Uj6PryTMgw/N9oGW3QXw0KmoY15sNrFrA",
   "ParentRef": "fvi7cEvBUU6-Uj6PryTMgw/cnpX9v7Y9kqNGQhfqSOZ4g",
-  "Created": "2026-06-07T09:36:02.2878333Z",
-  "Updated": "2026-06-07T11:18:19.1871194Z",
+  "Created": "2026-06-07T10:17:13.2302985Z",
+  "Updated": "2026-06-07T10:17:41.894787Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=24.10.19.0, Culture=neutral, PublicKeyToken=null",
     "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="X5nwXJJ9v0iE6NMTgP_lFw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="demoqa.com/automation-practice-form" DesignTimeRectangle="622, 476, 794, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Mobile Number' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Mobile Number' role='editable text' automationid='' /&gt;" Guid="1f2ad03b-5b17-41c4-b2c0-f2d9f544cbc3" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="350, 479, 99, 32" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl idx='9' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl automationid='' role='editable text' /&gt;" Guid="906127bc-110b-4ee9-8702-0726f4e49d9d" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="957ead4112c577b7ca3f411881860c6f.png" xmlns="">0SNQDDlFYyUqiti9yUUU61A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ystOrBOKIkCTivVjYFBH5g" Reference="fvi7cEvBUU6-Uj6PryTMgw/o26V_0kGDUaWnzS2oCSzpA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="demoqa.com/automation-practice-form" DesignTimeRectangle="622, 620, 17, 17" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="[&quot;&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='&quot;+currentHobbie+&quot;' role='check box' /&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='&quot;+currentHobbie+&quot;' role='check box' automationid='' /&gt;&quot;]" Guid="662351d0-be6d-41ff-bf19-6bb746285df9" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="2">
+          <Target DesignTimeRectangle="646, 616, 46, 25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='editable text' text='Sports' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='editable text' text='Sports' automationid='' /&gt;" Guid="c2090edc-bef5-4451-a870-b9924fd0383f" SearchSteps="Selector, FuzzySelector" />
+          <Target DesignTimeRectangle="350, 614, 52, 31" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='editable text' text='Hobbies' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='editable text' text='Hobbies' automationid='' /&gt;" Guid="888d507f-2b7a-4aa0-9a21-f677ab5fe922" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3cecff1324ba6205917ab8cb06078d1a.png" xmlns="">0o2B5RM88XUOhaHysryYMLw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

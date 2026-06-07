@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="J7_JYbwP5kqVt9gXoqN0iw" Reference="fvi7cEvBUU6-Uj6PryTMgw/76g-ZAjCUUuYX1PniWtutQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="demoqa.com/automation-practice-form" DesignTimeRectangle="697, 446, 17, 16" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="[&quot;&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='&quot;+CurrentRowInput(&quot;Gender&quot;).ToString.Trim+&quot;' role='radio button' /&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='&quot;+CurrentRowInput(&quot;Gender&quot;).ToString.Trim+&quot;' role='radio button' automationid='' /&gt;&quot;]" Guid="26090902-17ea-4d49-bfb1-78c45fba4957" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="56186a368d0abc1a520e8760d3bef15f.png" xmlns="">0VWrQrs5OaESASMiZ_8FFyA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

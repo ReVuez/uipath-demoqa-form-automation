@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="g_GO4JPO8EabwvCcTql5hg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="demoqa.com/automation-practice-form" DesignTimeRectangle="577, 140, 342, 36" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='grouping' text='Thanks for submitting the form' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='grouping' text='Thanks for submitting the form' automationid='' check:text='Thanks for submitting the form' /&gt;" Guid="5c8a39ae-1673-4d43-ad60-b68c690d8dcc" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5b277a42a6531d79cf435e1d19707757.png" xmlns="">04ypgZifYKUWE5ECmmw876A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

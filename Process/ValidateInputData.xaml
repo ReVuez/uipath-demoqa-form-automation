@@ -112,7 +112,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign DisplayName="Assign Status Invalid First Name" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_5">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[io_strStatus]</OutArgument>
               </Assign.To>
@@ -120,13 +120,11 @@
                 <InArgument x:TypeArguments="x:String">["Invalid"]</InArgument>
               </Assign.Value>
             </Assign>
-            <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="416,159" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="Add">
+            <InvokeMethod DisplayName="Add Message Invalid First Name" sap:VirtualizedContainerService.HintSize="416,159" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="Add">
               <InvokeMethod.TargetObject>
                 <InArgument x:TypeArguments="scg:List(x:String)">[io_listMessage]</InArgument>
               </InvokeMethod.TargetObject>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String">Missing first name.</Literal>
-              </InArgument>
+              <InArgument x:TypeArguments="x:String">Missing first name.</InArgument>
             </InvokeMethod>
           </Sequence>
         </If.Then>
@@ -149,7 +147,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign DisplayName="Assign Status Invalid Last Name" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_6">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[io_strStatus]</OutArgument>
               </Assign.To>
@@ -157,13 +155,11 @@
                 <InArgument x:TypeArguments="x:String">["Invalid"]</InArgument>
               </Assign.Value>
             </Assign>
-            <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="416,159" sap2010:WorkflowViewState.IdRef="InvokeMethod_4" MethodName="Add">
+            <InvokeMethod DisplayName="Add Message Invalid Last Name" sap:VirtualizedContainerService.HintSize="416,159" sap2010:WorkflowViewState.IdRef="InvokeMethod_4" MethodName="Add">
               <InvokeMethod.TargetObject>
                 <InArgument x:TypeArguments="scg:List(x:String)">[io_listMessage]</InArgument>
               </InvokeMethod.TargetObject>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String">Missing last name.</Literal>
-              </InArgument>
+              <InArgument x:TypeArguments="x:String">Missing last name.</InArgument>
             </InvokeMethod>
           </Sequence>
         </If.Then>
@@ -193,7 +189,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_7">
+            <Assign DisplayName="Assign - Status Invalid Email" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_7">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[io_strStatus]</OutArgument>
               </Assign.To>
@@ -201,13 +197,11 @@
                 <InArgument x:TypeArguments="x:String">["Invalid"]</InArgument>
               </Assign.Value>
             </Assign>
-            <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="416,159" sap2010:WorkflowViewState.IdRef="InvokeMethod_5" MethodName="Add">
+            <InvokeMethod DisplayName="Add Message Invalid Email" sap:VirtualizedContainerService.HintSize="416,159" sap2010:WorkflowViewState.IdRef="InvokeMethod_5" MethodName="Add">
               <InvokeMethod.TargetObject>
                 <InArgument x:TypeArguments="scg:List(x:String)">[io_listMessage]</InArgument>
               </InvokeMethod.TargetObject>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String">Email must contain '@' and '.' with no spaces.</Literal>
-              </InArgument>
+              <InArgument x:TypeArguments="x:String">Email must contain '@' and '.' with no spaces.</InArgument>
             </InvokeMethod>
           </Sequence>
         </If.Then>
@@ -236,7 +230,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_8">
+            <Assign DisplayName="Assign Status Invalid Mobile Number" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_8">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[io_strStatus]</OutArgument>
               </Assign.To>
@@ -244,13 +238,11 @@
                 <InArgument x:TypeArguments="x:String">["Invalid"]</InArgument>
               </Assign.Value>
             </Assign>
-            <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="416,159" sap2010:WorkflowViewState.IdRef="InvokeMethod_6" MethodName="Add">
+            <InvokeMethod DisplayName="Add Message Invalid Mobile Number" sap:VirtualizedContainerService.HintSize="416,159" sap2010:WorkflowViewState.IdRef="InvokeMethod_6" MethodName="Add">
               <InvokeMethod.TargetObject>
                 <InArgument x:TypeArguments="scg:List(x:String)">[io_listMessage]</InArgument>
               </InvokeMethod.TargetObject>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String">Mobile number must be 10 digits.</Literal>
-              </InArgument>
+              <InArgument x:TypeArguments="x:String">Mobile number must be 10 digits.</InArgument>
             </InvokeMethod>
           </Sequence>
         </If.Then>
