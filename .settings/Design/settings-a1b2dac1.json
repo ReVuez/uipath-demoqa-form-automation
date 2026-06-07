@@ -20,5 +20,19 @@
   "UiPath.UIAutomationNext.Activities.SearchStepsJava.Image": "False",
   "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyTypedText": "True",
   "UiPath.UIAutomationNext.Activities.ApplicationCard.WindowAttachMode": "ByInstance",
-  "UiPath.UIAutomationNext.Activities.ApplicationCard.ResizeWindow": "None"
+  "UiPath.UIAutomationNext.Activities.ApplicationCard.ResizeWindow": "None",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWnd.FullSelector": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWnd.FuzzySelector": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWnd.IgnoreSelectorsWithIdx": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWnd.WpfSelectors": "False",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWeb.FullSelector": "False",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWeb.FuzzySelector": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWeb.IgnoreSelectorsWithIdx": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsSAP.FullSelector": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsSAP.FuzzySelector": "False",
+  "UiPath.UIAutomationNext.Activities.SearchStepsSAP.IgnoreSelectorsWithIdx": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsJava.FullSelector": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsJava.FuzzySelector": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsJava.IgnoreSelectorsWithIdx": "True",
+  "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyActivities": "True"
 }
