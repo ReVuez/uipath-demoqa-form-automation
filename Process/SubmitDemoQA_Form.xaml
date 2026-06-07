@@ -124,59 +124,20 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SubmitDemoQA_Form" sap:VirtualizedContainerService.HintSize="1254,8021.000000000001" sap2010:WorkflowViewState.IdRef="Sequence_1">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="strStatus" />
-      <Variable x:TypeArguments="scg:List(x:String)" Name="listMessage" />
-      <Variable x:TypeArguments="x:String" Name="strSubmittedAt" />
-    </Sequence.Variables>
+  <Sequence DisplayName="SubmitDemoQA_Form" sap:VirtualizedContainerService.HintSize="1254,7639" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message (Start Submit DemoQA Form)" sap:VirtualizedContainerService.HintSize="766,175" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Start Submit DemoQA Form&quot;]" />
-    <ui:MultipleAssign DisplayName="Multiple Assign - Initialize Result Variables" sap:VirtualizedContainerService.HintSize="766,211" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
-      <ui:MultipleAssign.AssignOperations>
-        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
-            <ui:AssignOperation.To>
-              <OutArgument x:TypeArguments="x:String">[strStatus]</OutArgument>
-            </ui:AssignOperation.To>
-            <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String" Value="" />
-              </InArgument>
-            </ui:AssignOperation.Value>
-          </ui:AssignOperation>
-          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-            <ui:AssignOperation.To>
-              <OutArgument x:TypeArguments="scg:List(x:String)">[listMessage]</OutArgument>
-            </ui:AssignOperation.To>
-            <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String)]</InArgument>
-            </ui:AssignOperation.Value>
-          </ui:AssignOperation>
-          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-            <ui:AssignOperation.To>
-              <OutArgument x:TypeArguments="x:String">[strSubmittedAt]</OutArgument>
-            </ui:AssignOperation.To>
-            <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String" Value="" />
-              </InArgument>
-            </ui:AssignOperation.Value>
-          </ui:AssignOperation>
-        </scg:List>
-      </ui:MultipleAssign.AssignOperations>
-    </ui:MultipleAssign>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome demosite" sap:VirtualizedContainerService.HintSize="766,7446" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="19dc1ddd-ab3a-45b9-9969-18db6737323f" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome demosite" sap:VirtualizedContainerService.HintSize="766,7275" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="19dc1ddd-ab3a-45b9-9969-18db6737323f" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do Submit Form" sap:VirtualizedContainerService.HintSize="732,7196" sap2010:WorkflowViewState.IdRef="Sequence_29">
+          <Sequence DisplayName="Do Submit Form" sap:VirtualizedContainerService.HintSize="732,7025" sap2010:WorkflowViewState.IdRef="Sequence_29">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="indexRowInput" />
             </Sequence.Variables>
@@ -185,65 +146,102 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Student Registration Form'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="698,57" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Timeout="10" Version="V4">
-              <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_30">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Sequence>
-              </uix:NCheckState.IfExists>
-              <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,178" sap2010:WorkflowViewState.IdRef="Sequence_31">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Throw DisplayName="Throw Failed to Load Page" Exception="[New Exception(&quot;Failed to load DemoQA Practice Form page.&quot;)]" sap:VirtualizedContainerService.HintSize="416,116" sap2010:WorkflowViewState.IdRef="Throw_1" />
-                </Sequence>
-              </uix:NCheckState.IfNotExists>
-              <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="1Kjy45DNH0qaIGqWIaetaw" DesignTimeRectangle="350, 318, 1066, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Student Registration Form' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Student Registration Form' role='grouping' automationid='' check:text='Student Registration Form' /&gt;" Guid="a7467208-b3e4-45cb-918b-990f951f4473" InformativeScreenshot="3d7a1aaf6dd08b4701fdd3c7c6d87b1e.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/dp9IA_VJM0a4ArGLEpiFtg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target DesignTimeRectangle="350, 219, 1066, 74" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Practice Form' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Practice Form' role='grouping' automationid='' check:text='Practice Form' /&gt;" Guid="59c65325-27f9-44f5-99ad-2b6fbca493d4" SearchSteps="Selector, FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NCheckState.Target>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </uix:NCheckState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[indexRowInput]" DataTable="[io_dtInput]" DisplayName="For Each Row in Input Data Table" sap:VirtualizedContainerService.HintSize="698,7077" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[indexRowInput]" DataTable="[io_dtInput]" DisplayName="For Each Row in Input Data Table" sap:VirtualizedContainerService.HintSize="698,6965" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRowInput" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="696,6902" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="696,6790" sap2010:WorkflowViewState.IdRef="Sequence_21">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="strIndexRowInput" />
+                      <Variable x:TypeArguments="x:String" Name="strStatus" />
+                      <Variable x:TypeArguments="scg:List(x:String)" Name="listMessage" />
+                      <Variable x:TypeArguments="x:String" Name="strSubmittedAt" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Assign strIndexRowInput" sap:VirtualizedContainerService.HintSize="662,175" sap2010:WorkflowViewState.IdRef="Assign_3">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[strIndexRowInput]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[(indexRowInput+1).ToString]</InArgument>
-                      </Assign.Value>
-                    </Assign>
+                    <uix:NCheckState DisplayName="Check App State 'Student Registration Form'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="662,57" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Timeout="10" Version="V4">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,178" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Throw DisplayName="Throw Failed to Load Page" Exception="[New Exception(&quot;Failed to load DemoQA Practice Form page.&quot;)]" sap:VirtualizedContainerService.HintSize="416,116" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="1Kjy45DNH0qaIGqWIaetaw" DesignTimeRectangle="350, 318, 1066, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Student Registration Form' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Student Registration Form' role='grouping' automationid='' check:text='Student Registration Form' /&gt;" Guid="a7467208-b3e4-45cb-918b-990f951f4473" InformativeScreenshot="3d7a1aaf6dd08b4701fdd3c7c6d87b1e.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/dp9IA_VJM0a4ArGLEpiFtg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="350, 219, 1066, 74" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Practice Form' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Practice Form' role='grouping' automationid='' check:text='Practice Form' /&gt;" Guid="59c65325-27f9-44f5-99ad-2b6fbca493d4" SearchSteps="Selector, FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                    <ui:MultipleAssign DisplayName="Multiple Assign - Initialize Result Variables" sap:VirtualizedContainerService.HintSize="662,242" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[strStatus]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="scg:List(x:String)">[listMessage]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String)]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[strSubmittedAt]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[strIndexRowInput]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[(indexRowInput+1).ToString]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
                     <ui:LogMessage DisplayName="Log Message (Processing Row)" sap:VirtualizedContainerService.HintSize="662,177" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Processing Row &quot;+strIndexRowInput+&quot; [&quot;+CurrentRowInput(&quot;FirstName&quot;).ToString.Trim+&quot; &quot;+CurrentRowInput(&quot;LastName&quot;).ToString.Trim+&quot;]&quot;]" />
                     <Sequence DisplayName="Validate Input Data" sap:VirtualizedContainerService.HintSize="662,260" sap2010:WorkflowViewState.IdRef="Sequence_17">
                       <sap:WorkflowViewStateService.ViewState>
@@ -259,23 +257,23 @@
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
                     </Sequence>
-                    <If Condition="[strStatus.ToLower.Trim.Contains(&quot;invalid&quot;) = False]" DisplayName="If Status Not Invalid" sap:VirtualizedContainerService.HintSize="662,6230" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If Condition="[strStatus.ToLower.Trim.Contains(&quot;invalid&quot;) = False]" DisplayName="If Status Not Invalid" sap:VirtualizedContainerService.HintSize="662,5994" sap2010:WorkflowViewState.IdRef="If_2">
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="660,5515" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="660,5279" sap2010:WorkflowViewState.IdRef="Sequence_19">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <TryCatch DisplayName="Try Catch Fill Data" sap:VirtualizedContainerService.HintSize="626,5076" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                          <TryCatch DisplayName="Try Catch Fill Data" sap:VirtualizedContainerService.HintSize="626,4840" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                             <TryCatch.Try>
-                              <Sequence DisplayName="Fill Data" sap:VirtualizedContainerService.HintSize="624,4424" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                              <Sequence DisplayName="Fill Data" sap:VirtualizedContainerService.HintSize="624,4188" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'First Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,288" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;FirstName&quot;).ToString.Trim]" Version="V4">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'First Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,251" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;FirstName&quot;).ToString.Trim]" Version="V4">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="usWpCgnPsEG7R8YHSWwEgA" DesignTimeRectangle="622, 350, 340, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='First Name' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='First Name' role='editable text' automationid='' /&gt;" Guid="454d2096-eaef-4dba-8a0f-0096a6a45c77" InformativeScreenshot="479fa75bbf91aa099eb536eb9f3fd11c.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/BDS3MdMF40qX62k3sGtSLg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -285,18 +283,8 @@
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
                                 </uix:NTypeInto>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Last Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,288" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;LastName&quot;).ToString.Trim]" Version="V4">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Last Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,251" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;LastName&quot;).ToString.Trim]" Version="V4">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="AssClxabxkOkBggstLdGWg" DesignTimeRectangle="1076, 350, 340, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Last Name' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Last Name' role='editable text' automationid='' /&gt;" Guid="dd9ef968-3a71-4734-a8ed-1d7d164ec6ea" InformativeScreenshot="15e88f76b779e55f2506407e2eb28d5e.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/t8jGRkl8LkKx84Yy7wLZ9w" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -306,18 +294,8 @@
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
                                 </uix:NTypeInto>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,288" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;Email&quot;).ToString.Trim]" Version="V4">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,251" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;Email&quot;).ToString.Trim]" Version="V4">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="jxHNPfLWGUSY9rIsVOvuFQ" DesignTimeRectangle="622, 396, 794, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='name@example.com' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='name@example.com' role='editable text' automationid='' /&gt;" Guid="d28d230d-7cad-4d83-93cd-b7db0ac48ba8" InformativeScreenshot="88b39d0b689e41562d86dfe58100892b.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/yEwcLTpuk06XqC5dWj4J5A" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -327,33 +305,13 @@
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
                                 </uix:NTypeInto>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Gender'" sap:VirtualizedContainerService.HintSize="590,227" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Version="V4">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Gender'" sap:VirtualizedContainerService.HintSize="590,190" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Version="V4">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="J7_JYbwP5kqVt9gXoqN0iw" DesignTimeRectangle="697, 446, 17, 16" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="[&quot;&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='&quot;+CurrentRowInput(&quot;Gender&quot;).ToString.Trim+&quot;' role='radio button' /&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='&quot;+CurrentRowInput(&quot;Gender&quot;).ToString.Trim+&quot;' role='radio button' automationid='' /&gt;&quot;]" Guid="26090902-17ea-4d49-bfb1-78c45fba4957" ImageBase64="" InformativeScreenshot="56186a368d0abc1a520e8760d3bef15f.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/76g-ZAjCUUuYX1PniWtutQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive" />
                                   </uix:NClick.Target>
-                                  <uix:NClick.VerifyOptions>
-                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionOptions.Retry>
-                                      <uix:VerifyExecutionOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionOptions.Timeout>
-                                    </uix:VerifyExecutionOptions>
-                                  </uix:NClick.VerifyOptions>
                                 </uix:NClick>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Mobile Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,288" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;Mobile&quot;).ToString.Trim]" Version="V4">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Mobile Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,251" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;Mobile&quot;).ToString.Trim]" Version="V4">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="X5nwXJJ9v0iE6NMTgP_lFw" DesignTimeRectangle="622, 476, 794, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Mobile Number' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Mobile Number' role='editable text' automationid='' /&gt;" Guid="1f2ad03b-5b17-41c4-b2c0-f2d9f544cbc3" InformativeScreenshot="957ead4112c577b7ca3f411881860c6f.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/N9oGW3QXw0KmoY15sNrFrA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -363,66 +321,59 @@
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
                                 </uix:NTypeInto>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Date of Birth'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,288" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;DateOfBirth&quot;).ToString.Trim]" Version="V4">
-                                  <uix:NTypeInto.Target>
-                                    <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="fTSEHv-bkE2r-mi6gO-kOw" DesignTimeRectangle="622, 522, 208, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl automationid='' role='editable text' /&gt;" Guid="92c775e2-0377-44c2-ae11-4e499e1b4f62" InformativeScreenshot="a91b12fa4a9163368a09999743aa6820.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/IJGYRXgC50-P2U6R6WDsjQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
+                                <uix:NSetText DisplayName="Set Text 'Date of Birth'" sap:VirtualizedContainerService.HintSize="590,195" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CDate(CurrentRowInput(&quot;DateOfBirth&quot;)).ToString(&quot;dd MMM yyyy&quot;)]" Version="V4">
+                                  <uix:NSetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="cfAISeMuz0eNeAyze_iFOg" DesignTimeRectangle="622, 522, 208, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl automationid='' role='editable text' /&gt;" Guid="251c587e-4d31-46a8-881b-5d9dff6076e4" InformativeScreenshot="d91b48a69337c73c15525f864890f7c7.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/iBxOpGs0TEaepeCmluhhaw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                          <uix:Target DesignTimeRectangle="350, 525, 79, 32" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl idx='10' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl automationid='' role='editable text' /&gt;" Guid="f32f9ab1-a39c-4d08-a8cc-9c0ebf44df05" SearchSteps="Selector, FuzzySelector" />
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <uix:Target DesignTimeRectangle="350, 525, 79, 32" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='editable text' text='Date of Birth' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='editable text' text='Date of Birth' automationid='' /&gt;" Guid="dd2710f3-4935-41fd-b40d-8ab7d44d69d9" SearchSteps="Selector, FuzzySelector" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
-                                  </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
-                                </uix:NTypeInto>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Subjects'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,288" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;Subjects&quot;).ToString.Trim]" Version="V4">
-                                  <uix:NTypeInto.Target>
-                                    <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="Ca-tQgpHYUG2RZkO2uu-XA" DesignTimeRectangle="623, 569, 791, 36" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="8e86749c-14c5-406a-bce0-c19757a7fb91" InformativeScreenshot="dfa9eb71fb35c95d4732e4a36c4f5234.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/Q38RptzFm0Wuc2WzBT0YbA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
-                                      <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                          <uix:Target DesignTimeRectangle="350, 571, 52, 32" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='editable text' text='Subjects' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='editable text' text='Subjects' automationid='' /&gt;" Guid="56bfa02b-d661-4dbc-b4c7-55c284f1dfac" SearchSteps="Selector, FuzzySelector" />
-                                        </scg:List>
-                                      </uix:TargetAnchorable.Anchors>
-                                    </uix:TargetAnchorable>
-                                  </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
-                                </uix:NTypeInto>
+                                  </uix:NSetText.Target>
+                                </uix:NSetText>
+                                <Sequence DisplayName="Subjects" sap:VirtualizedContainerService.HintSize="590,516" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each Subjects" sap:VirtualizedContainerService.HintSize="452,424" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[CurrentRowInput(&quot;Subjects&quot;).ToString.Split(&quot;,&quot;c).Select(Function(x) x.Trim)]">
+                                    <ui:ForEach.Body>
+                                      <ActivityAction x:TypeArguments="x:String">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:String" Name="currentSubject" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,302" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Subjects'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[currentSubject+&quot;[k(enter)]&quot;]" Version="V4">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="Ca-tQgpHYUG2RZkO2uu-XA" DesignTimeRectangle="623, 569, 791, 36" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="8e86749c-14c5-406a-bce0-c19757a7fb91" InformativeScreenshot="dfa9eb71fb35c95d4732e4a36c4f5234.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/Q38RptzFm0Wuc2WzBT0YbA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="350, 571, 52, 32" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='editable text' text='Subjects' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl role='editable text' text='Subjects' automationid='' /&gt;" Guid="56bfa02b-d661-4dbc-b4c7-55c284f1dfac" SearchSteps="Selector, FuzzySelector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ui:ForEach.Body>
+                                  </ui:ForEach>
+                                </Sequence>
                                 <Sequence DisplayName="Hobbies" sap:VirtualizedContainerService.HintSize="590,455" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentHobbie" sap:VirtualizedContainerService.HintSize="452,363" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[CurrentRowInput(&quot;Hobbies&quot;).ToString.Split(&quot;,&quot;c).Select(Function(x) x.Trim)]">
+                                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each Hobbies" sap:VirtualizedContainerService.HintSize="452,363" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[CurrentRowInput(&quot;Hobbies&quot;).ToString.Split(&quot;,&quot;c).Select(Function(x) x.Trim)]">
                                     <ui:ForEach.Body>
                                       <ActivityAction x:TypeArguments="x:String">
                                         <ActivityAction.Argument>
@@ -451,7 +402,7 @@
                                     </ui:ForEach.Body>
                                   </ui:ForEach>
                                 </Sequence>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,288" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;Address&quot;).ToString.Trim]" Version="V4">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="590,251" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="HardwareEvents" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Text="[CurrentRowInput(&quot;Address&quot;).ToString.Trim]" Version="V4">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="r-i747S_c0W4DRGwu418oQ" DesignTimeRectangle="622, 699, 794, 134" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Current Address' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Current Address' role='editable text' automationid='' /&gt;" Guid="b2db6e7f-eb9f-45e3-b03e-252ec2422136" InformativeScreenshot="24b7d9daa962eac4547bd715b9a7d6f8.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/rY2rYubeSEaZuc4OqNazbw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -461,18 +412,8 @@
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
                                 </uix:NTypeInto>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="590,227" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Version="V4">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="590,190" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Version="V4">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="-ThKMPjMZkmj0ku4HHHqaA" DesignTimeRectangle="1257, 903, 77, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Submit' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Submit' role='push button' automationid='' check:text='Submit' /&gt;" Guid="6792fe22-94ef-4bf8-bba3-b16250ba99ac" InformativeScreenshot="d22f97e1d9cdd4acad11b0205b0f4a25.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/Gn7nuoRHdUGlNERtI0Myrg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -482,18 +423,8 @@
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NClick.Target>
-                                  <uix:NClick.VerifyOptions>
-                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionOptions.Retry>
-                                      <uix:VerifyExecutionOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionOptions.Timeout>
-                                    </uix:VerifyExecutionOptions>
-                                  </uix:NClick.VerifyOptions>
                                 </uix:NClick>
-                                <Sequence DisplayName="Check Confirmation Output" sap:VirtualizedContainerService.HintSize="590,1439" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                <Sequence DisplayName="Check Confirmation Output" sap:VirtualizedContainerService.HintSize="590,1327" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="strOutput" />
                                   </Sequence.Variables>
@@ -502,9 +433,9 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NCheckState DisplayName="Check App State 'Thanks for submitting the form'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="556,1356" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Version="V4">
+                                  <uix:NCheckState DisplayName="Check App State 'Thanks for submitting the form'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="556,1244" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Version="V4">
                                     <uix:NCheckState.IfExists>
-                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,1114" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,1002" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dtOutput" />
                                         </Sequence.Variables>
@@ -551,21 +482,7 @@
                                             <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strOutput" />
                                           </InArgument>
                                         </InvokeMethod>
-                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="478,220" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="19dc1ddd-ab3a-45b9-9969-18db6737323f" Version="V4">
-                                          <uix:NClick.Target>
-                                            <uix:TargetAnchorable BrowserURL="demoqa.com/automation-practice-form" ContentHash="XLMj3RHsPk2HGsXyVvycqA" DesignTimeRectangle="1279, 710, 65, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='demosite' role='document' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="3c49a774-b97f-4c4f-add7-561a37d74243" InformativeScreenshot="4a8892747a78e3e9beda54bf5ca3edfc.png" Reference="fvi7cEvBUU6-Uj6PryTMgw/KwdLjfEXb0OKMyXRfk3PvQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='demosite - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="AA" Version="V4" Visibility="Interactive" />
-                                          </uix:NClick.Target>
-                                          <uix:NClick.VerifyOptions>
-                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                              <uix:VerifyExecutionOptions.Retry>
-                                                <InArgument x:TypeArguments="x:Boolean" />
-                                              </uix:VerifyExecutionOptions.Retry>
-                                              <uix:VerifyExecutionOptions.Timeout>
-                                                <InArgument x:TypeArguments="x:Double" />
-                                              </uix:VerifyExecutionOptions.Timeout>
-                                            </uix:VerifyExecutionOptions>
-                                          </uix:NClick.VerifyOptions>
-                                        </uix:NClick>
+                                        <uix:NNavigateBrowser Action="Refresh" DelayAfter="2" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="478,108" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V4" />
                                       </Sequence>
                                     </uix:NCheckState.IfExists>
                                     <uix:NCheckState.IfNotExists>
@@ -634,7 +551,7 @@
                                     <OutArgument x:TypeArguments="x:Object">[CurrentRowInput("Status")]</OutArgument>
                                   </ui:AssignOperation.To>
                                   <ui:AssignOperation.Value>
-                                    <InArgument x:TypeArguments="x:Object">[strStatus]</InArgument>
+                                    <InArgument x:TypeArguments="x:String">[strStatus]</InArgument>
                                   </ui:AssignOperation.Value>
                                 </ui:AssignOperation>
                                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
@@ -650,7 +567,7 @@
                                     <OutArgument x:TypeArguments="x:Object">[CurrentRowInput("SubmittedAt")]</OutArgument>
                                   </ui:AssignOperation.To>
                                   <ui:AssignOperation.Value>
-                                    <InArgument x:TypeArguments="x:Object">[strSubmittedAt]</InArgument>
+                                    <InArgument x:TypeArguments="x:String">[strSubmittedAt]</InArgument>
                                   </ui:AssignOperation.Value>
                                 </ui:AssignOperation>
                               </scg:List>
@@ -674,7 +591,7 @@
                                     <OutArgument x:TypeArguments="x:Object">[CurrentRowInput("Status")]</OutArgument>
                                   </ui:AssignOperation.To>
                                   <ui:AssignOperation.Value>
-                                    <InArgument x:TypeArguments="x:Object">[strStatus]</InArgument>
+                                    <InArgument x:TypeArguments="x:String">[strStatus]</InArgument>
                                   </ui:AssignOperation.Value>
                                 </ui:AssignOperation>
                                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
