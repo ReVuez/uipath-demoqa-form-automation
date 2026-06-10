@@ -112,7 +112,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InitSettings" sap:VirtualizedContainerService.HintSize="1254,2135" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InitSettings" sap:VirtualizedContainerService.HintSize="1255,2135" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtConfig" />
     </Sequence.Variables>
